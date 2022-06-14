@@ -1,0 +1,17 @@
+
+
+.Carousel{
+    height: 440px;
+   
+    .box__item{
+        display: flex;
+        // height: 450px;
+        .item{
+            .item__img{
+                // width: 100%;
+                height: 440px;
+
+            }
+        }
+    }
+}

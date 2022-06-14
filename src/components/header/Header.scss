@@ -1,14 +1,28 @@
 .container {
     padding: 20px;
     background-color: #212329;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    .box__logo{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-decoration: none;
+        color: #e83587;
+        .logo {
+            color: #fff;
+        }
+    }
+
+    
+
     .box__search {
-            width: 70%;
-            display: flex;
-            justify-content: center;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+
         .search {
             .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
                 padding: 10px;
@@ -27,13 +41,27 @@
             border: solid 1px #4f515b;
             padding: 9.5px;
             border-radius: 0px 20px 20px 0px;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                color: #e83587;
+            }
         }
     }
-    .box__account{
+
+    .box__account {
         width: 15%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        
+
+        .shop__icons{
+            color: #fff;
+            cursor: pointer;
+
+            &:hover{
+                color: #e83587;
+            }
+        }
     }
 }

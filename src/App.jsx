@@ -1,22 +1,21 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
-import NavBar from "./components/navBar/NavBar";
-import NavMain from "./components/navMain/NavMain";
+import Swiper from "./components/Swiper/Swiper";
 import routesNavMain from "./routes/routesNavMain";
 
 
 function App() {
   return (
     <BrowserRouter >
-      <Header/>
-      <NavMain/>
+      <Header />
+      {/* <Swiper/> */}
       <Routes>
-      {routesNavMain.map((route, index) => (
-            <Route
-              key={index}
-              path={route.path}
-              element={route.element} />
-          ))}
+        {routesNavMain.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            element={route.element} />
+        ))}
       </Routes>
     </BrowserRouter>
   );
