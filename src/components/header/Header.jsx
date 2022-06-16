@@ -1,11 +1,11 @@
-import { Avatar, Box, Button, Menu, MenuItem, Stack, TextField } from '@mui/material'
-import SearchIcon from '@mui/icons-material/Search';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { Box, Button, Menu, MenuItem } from '@mui/material'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import React, { useState } from 'react'
 import Logo from '../../assets/img/Header/logo.svg'
 import '../header/Header.scss'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { Container } from '@mui/system';
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -17,31 +17,32 @@ const Header = () => {
     setAnchorEl(null);
   };
   return (
-    <Box className='container'>
-      <Link to='/' className='box__logo'>
-        <img className='logo' src={Logo} alt="logo" />
-        <span><h4>E:Store</h4></span>
-      </Link>
-      <Box className='box__search'>
-        <TextField
-          className='search'
-          placeholder='Search...'
-        />
-        <SearchIcon className='button__search' />
+    <Box id='header' className='header'>
+      <Box  className='container'>
+        <Box>
+        <Link to='/' className='header__logo'>
+          <img className='logo' src={Logo} alt="logo" />
+          <span><h4><span className='logo__text'>re:</span>Store</h4></span>
+        </Link>
       </Box>
-      <Box className='box__account'>
-        <FavoriteBorderIcon className='shop__icons' />
-        <ShoppingCartOutlinedIcon className='shop__icons' />
+      <Box className='hedaer__nav__menu'>
+        <Button className='choose__city__btn'>Санкт-Петербург и ЛО<KeyboardArrowDownIcon/></Button>
+        <NavLink to='#'>Магазины</NavLink>
+        <NavLink to='#'>Сервисные центры</NavLink>
+        <NavLink to='#'>Для бизнеса</NavLink>
+        <NavLink to='#'>Оплата и Доставка</NavLink>
+        <NavLink to='#'>Блог</NavLink>
+      </Box>
+      <Box className='header__account'>
         <Button
           id="demo-positioned-button"
-          aria-controls={open ? 'demo-positioned-menu' : undefined}
-          aria-haspopup="true"
-          aria-expanded={open ? 'true' : undefined}
+          // aria-controls={open ? 'demo-positioned-menu' : undefined}
+          // aria-haspopup="true"
+          // aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}
         >
-          <Stack direction="row" spacing={2}>
-            <Avatar>K</Avatar>
-          </Stack>
+          <AccountCircleIcon></AccountCircleIcon>
+          <span className='account__text'>Личный кабинет</span>
         </Button>
         <Menu
           id="demo-positioned-menu"
@@ -61,7 +62,8 @@ const Header = () => {
           <MenuItem onClick={handleClose}>My account</MenuItem>
           <MenuItem onClick={handleClose}>Logout</MenuItem>
         </Menu>
-      </Box>
+      </Box></Box>
+      
     </Box>
   )
 }

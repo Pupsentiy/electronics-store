@@ -1,4 +1,5 @@
 import React from 'react'
+import '../IPad/IPad.scss'
 
 const IPad = () => {
   return (

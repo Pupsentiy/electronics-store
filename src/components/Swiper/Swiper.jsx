@@ -1,5 +1,3 @@
-import { Box } from '@mui/system'
-import React, { useState } from 'react'
 import Carousel from 'react-material-ui-carousel'
 import { NavLink } from 'react-router-dom'
 import SwiperIphone from '../../assets/img/Swiper/Swiper-iPhone.jpg'
@@ -26,41 +24,20 @@ const link = [
 ]
 
 const Swiper = () => {
-  const [index, setIndex] = useState(0)
-  const handleChange = (cur, prev) => {
-    setIndex(cur);
-    console.log(cur, prev);
-  };
-
   return (
-
-    <Carousel className='Carousel'
-      // {...props }
-      index={index}
-      handleChange={handleChange}
+    <Carousel
+      className='Carousel'
       animation={"slide"}
       indicators={true}
-      swipe={true}
+      duration={800}
+      autoPlay={false}
     >
-      <Box className='box__item'>
-
-        {link.map((slide, index) =>
-          <NavLink key={index} className='item' to={slide.url}>
-            <img className='item__img' src={slide.img} alt="swiperimg" />
-          </NavLink>
-        )}
-        {/* <NavLink className='item' to='/apple-watch'>
-           <img className='item__img' src={SwiperWatch} alt="swiperimg" />
-         </NavLink>
-         <NavLink className='item' to='/apple-watch'>
-           <img className='item__img' src={SwiperPodcast} alt="swiperimg" />
-         </NavLink> */}
-      </Box>
+      {link.map((slide, i) => (
+        <NavLink key={i} index={i} className='item' to={slide.url} >
+          <img className='item__img' src={slide.img} alt="swiperimg" />
+        </NavLink>
+      ))}
     </Carousel>
-
-
-
-
   )
 }
 

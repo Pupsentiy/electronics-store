@@ -5,6 +5,8 @@ import iPhone from '../../assets/img/NavMain/nav-Iphone.jpg'
 import iPad from '../../assets/img/NavMain/nav-ipad.jpg'
 import mac from '../../assets/img/NavMain/nav-mac.jpg'
 import watch from '../../assets/img/NavMain/nav-watch.jpg'
+import accessorries from '../../assets/img/NavMain/nav-Accessories.jpg'
+import HeadphonesAndAcoustics from '../../assets/img/NavMain/nav-HeadphonesAndAcoustics.png' 
 import '../navMain/NavMain.scss'
 import Swiper from '../Swiper/Swiper'
 
@@ -44,7 +46,21 @@ const NavMain = () => {
           </Box>
         </NavLink>
       </Box>
-
+      <Box className='wrapper__box'>
+        <NavLink to='/apple-mac'>
+          <Box className='box__item'>
+            <img className='nav__img' src={accessorries} alt="mac" />
+            <span className='wrapper__title'><h3>Аксессуары</h3></span>
+          </Box>
+        </NavLink>
+      </Box> <Box className='wrapper__box'>
+        <NavLink to='/apple-mac'>
+          <Box className='box__item'>
+            <img className='nav__img' src={HeadphonesAndAcoustics} alt="mac" />
+            <span className='wrapper__title'><h3>Наушники и акустика</h3></span>
+          </Box>
+        </NavLink>
+      </Box>
     </Box>
     </>
     

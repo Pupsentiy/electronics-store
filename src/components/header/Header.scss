@@ -1,67 +1,81 @@
-.container {
-    padding: 20px;
+.header {
+    padding: 10px ;
     background-color: #212329;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    .box__logo{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        text-decoration: none;
-        color: #e83587;
-        .logo {
-            color: #fff;
-        }
-    }
-
-    
-
-    .box__search {
-        width: 70%;
-        display: flex;
-        justify-content: center;
-
-        .search {
-            .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-                padding: 10px;
-            }
-
-            .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
-                color: #fff;
-                border-radius: 20px 0px 0px 20px;
-                border: solid 1px #4f515b;
-            }
-        }
-
-        .css-1d3z3hw-MuiOutlinedInput-notchedOutline {}
-
-        .button__search {
-            border: solid 1px #4f515b;
-            padding: 9.5px;
-            border-radius: 0px 20px 20px 0px;
-            color: #fff;
-            cursor: pointer;
-            &:hover{
-                color: #e83587;
-            }
-        }
-    }
-
-    .box__account {
-        width: 15%;
+    justify-content: center;
+    .container{
+        max-width: 1440px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        .header__logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+            color: #e83587;
+            font-size: 22px;
+            
+            .logo {
+                color: #fff;
+            }
+    
+            .logo__text {
+                color: #fff;
+            }
+    
+            h4 {
+                margin: 0px;
+            }
+        }
+    
+        .hedaer__nav__menu {
+            margin-left: 40px;
+            .choose__city__btn{
+                color: #fff;
+                &:hover{
+                    color: #e83587;
+                }
+                .css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+                        background-color: none;
 
-        .shop__icons{
-            color: #fff;
-            cursor: pointer;
-
-            &:hover{
-                color: #e83587;
+                }
+            }
+            a {
+                text-decoration: none;
+                margin-left: 22px;
+                color: #fff;
+                font-size: 14px;
+                &:hover {
+                    color: #e83587;
+                }
+            }
+        }
+    
+        .header__account {
+            margin-left: 40px;
+            .css-i4bv87-MuiSvgIcon-root {
+                color: darkgray;
+            }
+    
+            .account__text {
+                margin-left: 5px;
+            }
+    
+            span {
+                font-size: 14px;
+                color: darkgrey;
+                text-transform: none;
+            }
+    
+            .shop__icons {
+                color: #fff;
+                cursor: pointer;
+    
+                &:hover {
+                    color: #e83587;
+                }
             }
         }
     }
+    
 }

@@ -1,16 +1,15 @@
 .wrapper {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
     .wrapper__box {
         display: flex;
         justify-content: center;
-        background-color: #f7f7f7;
-        width: 25%;
+        background-color: hsl(0, 0%, 97%);
+        // width: 25%;
         margin: 1px;
 
         &:hover {
             box-shadow: 0px 0px 5px 0px #000;
-
             a {
                 color: #e83587;
             }
