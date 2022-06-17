@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Accessories/Accessories.scss'
+import './Accessories.scss'
 
 const Accessories = () => {
   return (

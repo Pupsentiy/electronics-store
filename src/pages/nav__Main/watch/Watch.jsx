@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Watch/Watch.scss'
+import './Watch.scss'
 const Watch = () => {
   return (
     <div>Watch</div>

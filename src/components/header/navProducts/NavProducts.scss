@@ -1,0 +1,111 @@
+.heder__bottom {
+    background-color: #242424;
+    font-size: 14px;
+    width: 100%;
+    .container__bottom {
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+
+        .header__search__btn {
+            color: #fff;
+            font-size: 30px;
+            padding-right: 15px;
+            cursor: pointer;
+
+            &:hover {
+                color: #e83587;
+                transition: all 0.25s ease;
+            }
+        }
+
+        .header__menu {
+            display: flex;
+            align-items: center;
+
+            .manu__list__left {
+                display: flex;
+                align-items: center;
+
+                a {
+                    padding: 0px 15px;
+                    text-decoration: none;
+                    color: #fff;
+
+                    &:hover {
+                        color: #e83587;
+                        transition: all 0.25s ease;
+                    }
+                }
+            }
+
+            .manu__list__right {
+                border-left: 1px solid #ffffff33;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                padding-left: 15px;
+                margin-left: 15px;
+
+                a {
+                    padding: 0px 15px;
+                    text-decoration: none;
+                    color: #999999;
+
+                    &:hover {
+                        color: #e83587;
+                        transition: all 0.25s ease;
+                    }
+
+                    &:last-child {
+                        color: #e83587;
+                    }
+                }
+            }
+        }
+
+        .header__menu__right {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+
+            a {
+                color: #fff;
+                margin: 10px;
+
+                &:hover {
+                    color: #e83587;
+                    transition: all 0.25s ease;
+                }
+            }
+
+            // .menu__icons {
+            //     color: #fff;
+            //     padding: 10px 5px 10px 5px;
+            //     &:hover {
+            //         color: #e83587;
+            //         transition: all 0.25s ease;
+
+            //     }
+            // }
+
+            .menu__right__link {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                span {
+                    margin-left: 3px;
+                }
+
+                &:hover {
+                    color: #e83587;
+                    transition: all 0.25s ease;
+                }
+            }
+        }
+    }
+}

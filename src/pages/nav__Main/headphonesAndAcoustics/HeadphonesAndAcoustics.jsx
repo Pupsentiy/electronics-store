@@ -1,5 +1,5 @@
 import React from 'react'
-import '../HeadphonesAndAcoustics/HeadphonesAndAcoustics.scss'
+import './HeadphonesAndAcoustics.scss'
 
 const HeadphonesAndAcoustics = () => {
   return (

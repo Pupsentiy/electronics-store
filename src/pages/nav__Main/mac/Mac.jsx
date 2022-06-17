@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Mac/Mac.scss'
+import './Mac.scss'
 
 const Mac = () => {
   return (

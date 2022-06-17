@@ -1,0 +1,53 @@
+.Carousel {
+    background-color: hsl(0, 0%, 97%);
+    .item {
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .item__img {
+            height: 100%;
+        }
+    }
+
+    .css-1m9128y {
+        position: absolute;
+        bottom: 20px;
+        margin: 0px;
+        cursor: pointer;
+        z-index: 1;
+
+        &:hover {
+            color: #e83587;
+        }
+    }
+
+    .css-hn784z {
+        margin-left: 30px;
+        .css-1g04gm2-MuiButtonBase-root-MuiIconButton-root {
+            background-color: #eaeaea;
+            color: #000;
+            opacity: 1 !important;
+
+            &:hover {
+                background-color: #f2f2f2;
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    .css-1abc02a {
+        margin-right: 30px;
+        .css-1g04gm2-MuiButtonBase-root-MuiIconButton-root {
+            background-color: #eaeaea;
+            color: #000;
+            opacity: 1 !important;
+
+            &:hover {
+                background-color: #f2f2f2;
+                opacity: 1 !important;
+            }
+        }
+    }
+}

@@ -1,70 +1,13 @@
-import { Box, Button, Menu, MenuItem } from '@mui/material'
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import React, { useState } from 'react'
-import Logo from '../../assets/img/Header/logo.svg'
-import '../header/Header.scss'
-import { Link, NavLink } from 'react-router-dom';
-import { Container } from '@mui/system';
+import React from 'react'
+import HeaderNavBar from './headerNavBar/HeaderNavBar'
+import NavProducts from './navProducts/NavProducts'
 
 const Header = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
   return (
-    <Box id='header' className='header'>
-      <Box  className='container'>
-        <Box>
-        <Link to='/' className='header__logo'>
-          <img className='logo' src={Logo} alt="logo" />
-          <span><h4><span className='logo__text'>re:</span>Store</h4></span>
-        </Link>
-      </Box>
-      <Box className='hedaer__nav__menu'>
-        <Button className='choose__city__btn'>Санкт-Петербург и ЛО<KeyboardArrowDownIcon/></Button>
-        <NavLink to='#'>Магазины</NavLink>
-        <NavLink to='#'>Сервисные центры</NavLink>
-        <NavLink to='#'>Для бизнеса</NavLink>
-        <NavLink to='#'>Оплата и Доставка</NavLink>
-        <NavLink to='#'>Блог</NavLink>
-      </Box>
-      <Box className='header__account'>
-        <Button
-          id="demo-positioned-button"
-          // aria-controls={open ? 'demo-positioned-menu' : undefined}
-          // aria-haspopup="true"
-          // aria-expanded={open ? 'true' : undefined}
-          onClick={handleClick}
-        >
-          <AccountCircleIcon></AccountCircleIcon>
-          <span className='account__text'>Личный кабинет</span>
-        </Button>
-        <Menu
-          id="demo-positioned-menu"
-          aria-labelledby="demo-positioned-button"
-          anchorEl={anchorEl}
-          open={open}
-          onClose={handleClose}
-          anchorOrigin={{
-            vertical: 'top',
-            horizontal: 'left',
-          }}
-          transformOrigin={{
-            vertical: 'top',
-            horizontal: 'left',
-          }}
-        >
-          <MenuItem onClick={handleClose}>My account</MenuItem>
-          <MenuItem onClick={handleClose}>Logout</MenuItem>
-        </Menu>
-      </Box></Box>
-      
-    </Box>
+    <>
+      <HeaderNavBar />
+      <NavProducts />
+    </>
   )
 }
 

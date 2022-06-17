@@ -1,5 +1,5 @@
 import React from 'react'
-import '../IPhone/IPhone.scss'
+import './IPhone.scss'
 
 const IPhone = () => {
   return (
