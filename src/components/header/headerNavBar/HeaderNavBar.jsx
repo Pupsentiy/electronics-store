@@ -16,9 +16,9 @@ const HeaderNavBar = () => {
     setAnchorEl(null);
   };
   return (
-    <Box id='header' className='header__top'>
+    <Box  className='header__top'>
       <Box className='container'>
-        <Box>
+        <Box className='header__content'>
           <Link to='/' className='header__logo'>
             <h4><span>re:</span>Store</h4>
             <Box className='logo__box'>
@@ -26,7 +26,7 @@ const HeaderNavBar = () => {
               <span className='text__logo'>Premium <br /> Reseller</span>
             </Box>
           </Link>
-        </Box>
+       
         <Box className='hedaer__nav__menu'>
           <Button className='choose__city__btn'>Санкт-Петербург и ЛО<KeyboardArrowDownIcon /></Button>
           <NavLink to='#'>Магазины</NavLink>
@@ -64,6 +64,7 @@ const HeaderNavBar = () => {
             <MenuItem onClick={handleClose}>My account</MenuItem>
             <MenuItem onClick={handleClose}>Logout</MenuItem>
           </Menu>
+        </Box>
         </Box>
       </Box>
     </Box>

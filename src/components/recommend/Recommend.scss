@@ -1,0 +1,36 @@
+@import "../../mixins.scss";
+
+.recommend {
+    background: #fff;
+    overflow: hidden;
+
+    .container {
+        @include container;
+
+        .recommend__inner {
+            display: flex;
+
+            .recommend__title {
+                padding: 60px 0px 74px;
+                max-width: 200px;
+                width: 100%;
+
+                p {
+                    font-size: 28px;
+                    line-height: 34px;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                }
+            }
+
+            .recommend__slider {
+                margin: 0 auto;
+                z-index: 1;
+
+                // overflow: hidden;
+                // padding: 60px 40px 70px;
+           
+            }
+        }
+    }
+}

@@ -9,17 +9,17 @@ const link = [
   {
     url: '/apple-iphone',
     img: SwiperIphone,
-
+    id: 1,
   },
   {
     url: '/apple-watch',
     img: SwiperWatch,
-
+    id: 2,
   },
   {
     url: '/apple-iphone',
     img: SwiperPodcast,
-
+    id: 3,
   }
 ]
 

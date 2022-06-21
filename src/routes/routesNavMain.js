@@ -1,4 +1,3 @@
-import NavMain from "../components/navMain/NavMain"
 import IPhone from "../pages/nav__Main/iPhone/IPhone"
 import IPad from "../pages/nav__Main/iPad/IPad"
 import Accessories from "../pages/nav__Main/accessories/Accessories"
@@ -7,13 +6,14 @@ import HeadphonesAndAcoustics from "../pages/nav__Main/headphonesAndAcoustics/He
 import Gadjets from "../pages/nav__Main/gadjets/Gadjets"
 import GiftСertificate from "../pages/nav__Main/giftСertificate/GiftСertificate"
 import Mac from "../pages/nav__Main/mac/Mac"
+import Main from "../components/Main"
 
 
 
 const routesNavMain = [
     {
         path: '/',
-        element: <NavMain />
+        element: <Main/>
     },
     {
         path: '/apple-iphone',

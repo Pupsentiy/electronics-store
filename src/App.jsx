@@ -8,7 +8,7 @@ function App() {
       <Header />
       <Routes>
         {routesNavMain.map((route, index) => (
-          <Route
+          <Route    
             key={index}
             path={route.path}
             element={route.element} />

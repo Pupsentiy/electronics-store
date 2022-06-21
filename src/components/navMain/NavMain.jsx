@@ -10,16 +10,14 @@ import giftCert from '../../assets/img/navMain/giftСertificate.jpg'
 import accessorries from '../../assets/img/navMain/nav-Accessories.jpg'
 import HeadphonesAndAcoustics from '../../assets/img/navMain/nav-HeadphonesAndAcoustics.png'
 import './NavMain.scss'
-import Swiper from '../swiper/Swiper'
+import { Container } from '@mui/material'
 
 
 const NavMain = () => {
   return (
     <>
-      <Swiper />
-
       <Box className='wrapper'>
-        <NavLink to='/apple-iphone'  >
+        <NavLink to='/apple-iphone' className='item__link' >
           <Box className='wrapper__box'>
             <Box className='box__item'>
               <img className='nav__img' src={iPhone} alt="iPhone" />
@@ -27,7 +25,7 @@ const NavMain = () => {
             </Box>
           </Box>
         </NavLink>
-        <NavLink to='/apple-ipad'>
+        <NavLink to='/apple-ipad' className='item__link'>
           <Box className='wrapper__box'>
             <Box className='box__item'>
               <img className='nav__img' src={iPad} alt="iPad" />
@@ -35,7 +33,7 @@ const NavMain = () => {
             </Box>
           </Box>
         </NavLink>
-        <NavLink to='/apple-watch'>
+        <NavLink to='/apple-watch' className='item__link'>
           <Box className='wrapper__box'>
             <Box className='box__item'>
               <img className='nav__img' src={watch} alt="watch" />
@@ -43,14 +41,15 @@ const NavMain = () => {
             </Box>
           </Box>
         </NavLink>
-        <NavLink to='/apple-mac'>
+        <NavLink to='/apple-mac' className='item__link'>
           <Box className='wrapper__box'>
             <Box className='box__item'>
               <img className='nav__img' src={mac} alt="mac" />
               <span className='wrapper__title'><h3>Mac</h3> <span>от 149 990₽</span></span>
             </Box>
           </Box>
-        </NavLink>        <NavLink to='/apple-mac'>
+        </NavLink>
+        <NavLink to='/apple-mac' className='item__link'>
           <Box className='wrapper__box'>
             <Box className='box__item'>
               <img className='nav__img' src={accessorries} alt="mac" />
@@ -58,34 +57,31 @@ const NavMain = () => {
             </Box>
           </Box>
         </NavLink>
-        <NavLink to='#'>
-          <Box className='wrapper__box'>
+        <NavLink to='#' className='item__link'>
+          <Box className='wrapper__box' >
             <Box className='box__item'>
               <img className='nav__img' src={HeadphonesAndAcoustics} alt="mac" />
               <span className='wrapper__title'><h3>Наушники и акустика</h3> <span>от 2 990₽</span></span>
             </Box>
           </Box>
         </NavLink>
-        <NavLink to='#'>
-          <Box className='wrapper__box'>
+        <NavLink to='#' className='item__link'>
+          <Box className='wrapper__box' >
             <Box className='box__item'>
               <img className='nav__img' src={gadjets} alt="mac" />
               <span className='wrapper__title'><h3>Гаджеты</h3> <span>от 990₽</span></span>
             </Box>
           </Box>
         </NavLink>
-        
-          <NavLink to='#'>
+        <NavLink to='#' className='item__link'>
           <Box className='wrapper__gift'>
-          <Box className='box__item'>
             <img className='nav__img' src={giftCert} alt="mac" />
-            </Box>
-            </Box>
-          </NavLink>
-        </Box>
-      
-    </>
+          </Box>
+        </NavLink>
+      <Container/>
 
+      </Box>
+    </>
   )
 }
 
