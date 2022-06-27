@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import SwiperIphone from '../../assets/img/swiper/Swiper-iPhone.jpg'
 import SwiperWatch from '../../assets/img/swiper/Swiper-Podcast.jpg'
 import SwiperPodcast from '../../assets/img/swiper/Swiper-Watch.jpg'
-import '../swiper/Swiper.scss'
+import './SwiperHeader.scss'
 
 const link = [
   {
@@ -23,7 +23,7 @@ const link = [
   }
 ]
 
-const Swiper = () => {
+const SwiperHeader = () => {
   return (
     <Carousel
       className='Carousel'
@@ -42,4 +42,4 @@ const Swiper = () => {
   )
 }
 
-export default Swiper
+export default SwiperHeader

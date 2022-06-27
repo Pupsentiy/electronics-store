@@ -1,0 +1,19 @@
+@import "../../mixins.scss";
+
+.buyers__Сhoice {
+    overflow: hidden;
+    padding-top: 45px;
+    padding-bottom: 65px;
+
+    .container {
+        @include container;
+
+        .header__block__{
+            @include header__block;
+
+            .h2 {
+                @include h2;
+            }
+        }
+    }
+}

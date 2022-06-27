@@ -1,0 +1,91 @@
+@import "../../mixins.scss";
+
+.gadjet__block {
+    background-color: #f7f7f7;
+    padding-bottom: 55px;
+    padding-top: 45px;
+
+    .container {
+        @include container;
+
+        .header__block {
+            @include header__block;
+
+            .h2 {
+                @include h2;
+            }
+
+            .header__block__link {
+                color: #e83587;
+                transition: all 0.25s ease;
+                text-decoration: none;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+
+                .header__block__point {
+                    background-color: rgba(0, 0, 0, 0.2);
+                    border-radius: 50%;
+                    display: block;
+                    height: 7px;
+                    width: 7px;
+                    margin: 0px 9px 0px 20px;
+                    position: relative;
+
+                    &:before {
+                        background-color: rgba(0, 0, 0, 0.2);
+                        border-radius: 50%;
+                        display: block;
+                        height: 7px;
+                        width: 7px;
+                        position: absolute;
+                        content: " ";
+                        left: -20px;
+                        top: 0px;
+                    }
+
+                    &:after {
+                        background-color: rgba(0, 0, 0, 0.2);
+                        border-radius: 50%;
+                        display: block;
+                        height: 7px;
+                        width: 7px;
+                        position: absolute;
+                        content: " ";
+                        left: -10px;
+                        top: 0px;
+                    }
+                }
+            }
+        }
+
+        .gadjet__wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .gadjet__item {
+                display: block;
+                width: 95px;
+                color: #000;
+
+                &:hover {
+                    transition: all 0.25s ease;
+                    color: #e83587;
+                }
+
+                .gadjet__img {
+                    margin-bottom: 15px;
+                    mix-blend-mode: multiply;
+                    height: 98px;
+                    max-width: 100%;
+                }
+
+                .gadjet__name {
+                    display: block;
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

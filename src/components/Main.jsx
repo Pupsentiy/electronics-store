@@ -1,11 +1,12 @@
 import React from 'react'
-import Swiper from './swiper/Swiper'
+import SwiperHeader from './swiperHeader/SwiperHeader'
 import NavMain from './navMain/NavMain'
 import Container from './container/Container'
+
 const Main = () => {
     return (
         <>
-            <Swiper />
+            <SwiperHeader />
             <NavMain />
             <Container />
         </>

@@ -1,0 +1,125 @@
+@import "../../mixins.scss";
+
+.carousel__academy {
+    overflow: hidden;
+    padding-bottom: 45px;
+    padding-top: 55px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    .container {
+        @include container;
+
+        .header__block {
+            @include header__block;
+            margin-bottom: 15px;
+            .h2 {
+                @include h2;
+
+                .h2__link{
+                    transition: all 0.25s ease;
+                    color: #e83587;
+                    text-decoration: none;
+                }
+            }
+
+            .header__block__link {
+                color: #e83587;
+                transition: all 0.25s ease;
+                text-decoration: none;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+
+                .header__block__point {
+                    background-color: rgba(0, 0, 0, 0.2);
+                    border-radius: 50%;
+                    display: block;
+                    height: 7px;
+                    width: 7px;
+                    margin: 0px 9px 0px 20px;
+                    position: relative;
+
+                    &:before {
+                        background-color: rgba(0, 0, 0, 0.2);
+                        border-radius: 50%;
+                        display: block;
+                        height: 7px;
+                        width: 7px;
+                        position: absolute;
+                        content: " ";
+                        left: -20px;
+                        top: 0px;
+                    }
+
+                    &:after {
+                        background-color: rgba(0, 0, 0, 0.2);
+                        border-radius: 50%;
+                        display: block;
+                        height: 7px;
+                        width: 7px;
+                        position: absolute;
+                        content: " ";
+                        left: -10px;
+                        top: 0px;
+                    }
+                }
+            }
+        }
+
+        .carousel__academy__slogan {
+            font-size: 14px;
+            margin-bottom: 55px;
+        }
+
+        .carousel__academy__gallery {
+            margin-bottom: 40px;
+
+            .seminar__link {
+                display: inline-block;
+                vertical-align: top;
+                white-space: normal;
+                width: 252px;
+                margin-right: 40px;
+                text-decoration: none;
+                color: #000;
+                &:hover{
+                    color: #e83587;
+                }
+
+                .seminar__img {
+                    align-items: center;
+                    background-color: #f7f7f7;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    height: 142px;
+                    
+                }
+
+                .seminar__info {
+
+                    .seminar__name {
+                        display: block;
+                        font-size: 18px;
+                        margin-bottom: 12px;
+                    }
+
+                    .seminar__descr {
+                        display: block;
+                        font-size: 14px;
+                        margin-bottom: 15px;
+                    }
+
+                    .seminar__date {
+                        color: #999;
+                        display: inline-block;
+                        font-size: 12px;
+                        margin-right: 18px;
+                        text-transform: lowercase;
+                    }
+                }
+            }
+        }
+    }
+}
