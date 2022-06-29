@@ -1,9 +1,9 @@
 @import "../../mixins.scss";
 
-.gadjet__block {
-    background-color: #f7f7f7;
-    padding-bottom: 55px;
-    padding-top: 45px;
+.blog {
+    background-color: #fff;
+    padding-bottom: 54px;
+    padding-top: 43px;
 
     .container {
         @include container;
@@ -11,8 +11,26 @@
         .header__block {
             @include header__block;
 
+            align-items: flex-end;
+
             .h2 {
                 @include h2;
+            }
+
+            .header__blog__tags {
+                white-space: nowrap;
+                margin-right: auto;
+                margin-left: 29px;
+
+                .header__blog__tags {
+                    margin-left: 10px;
+                    background-color: #f2f2f2;
+                    border-radius: 3px;
+                    color: #999;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 6px 12px;
+                }
             }
 
             .header__block__link {
@@ -59,41 +77,25 @@
             }
         }
 
-        .gadjet__wrapper {
+        .blog__posts {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            margin-top: 40px;
 
-            .gadjet__item {
-                display: block;
-                width: 95px;
+            .post__card {
                 color: #000;
-                text-decoration: none;
+            }
 
-                &:hover {
-                    transition: all 0.25s ease;
-                    color: #e83587;
-                }
+            .blog__subheader {
+                font-size: 16px;
+                margin-bottom: 28px;
+                margin-top: 34px;
+            }
 
-                .gadjet__img__wrapper {
-                    mix-blend-mode: multiply;
-                    height: 98px;
-                    max-width: 100%;
+            .blog__popular__posts {
+                display: flex;
 
-                    .gadjet__img {
-                        height: auto;
-                        max-width: 100%;
-                        vertical-align: middle;
-                    margin-bottom: 15px;
-
-                    }
-
-                }
-
-                .gadjet__name {
-                    display: block;
-                    font-size: 14px;
-                    text-align: center;
+                .post__card {
+                    color: #000;
                 }
             }
         }

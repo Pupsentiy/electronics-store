@@ -1,0 +1,67 @@
+@import "../../mixins.scss";
+
+.ideas__and__compilation {
+    background: linear-gradient(to bottom, #202833 0%, #27262c 100%);
+    padding-bottom: 29px;
+    padding-top: 26px;
+
+    .container {
+        @include container;
+
+        .header__block {
+            @include header__block;
+
+
+            .h2 {
+                @include h2;
+                color: #fff;
+            }
+        }
+
+        .ideas__and__compilation__plates {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .idea__plate {
+                margin-right: 32px;
+                margin-bottom: 49px;
+                display: flex;
+                height: 303px;
+                overflow: hidden;
+                position: relative;
+                align-items: flex-end;
+                background-size: cover;
+                width: 327px;
+                border-radius: 5px;
+                font-size: 17px;
+                font-weight: 600;
+                
+                &:hover{
+                    box-shadow: 0 0 15px 0 rgb(247 247 247 / 50%);
+                    transition: all 0.25s ease;
+                }
+
+                &:first-child {
+                    width: 685px;
+                    font-size: 30px;
+                }
+
+                .idea__plate__text {
+                    position: absolute;
+                    z-index: 1;
+                    color: #fff;
+                    bottom: 27px;
+                    left: 29px;
+                    right: 29px;
+                }
+
+                .idea__plate__img {
+                    height: 100%;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

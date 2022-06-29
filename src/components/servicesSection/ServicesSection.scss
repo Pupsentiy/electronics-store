@@ -1,15 +1,17 @@
 @import "../../mixins.scss";
 
-.gadjet__block {
-    background-color: #f7f7f7;
-    padding-bottom: 55px;
-    padding-top: 45px;
+.services__section {
+    background: linear-gradient(to bottom, #202833 0%, #27262c 100%);
+    overflow: hidden;
+    padding: 43px 0 71px;
 
     .container {
         @include container;
 
         .header__block {
             @include header__block;
+
+            color: #fff;
 
             .h2 {
                 @include h2;
@@ -24,7 +26,7 @@
                 align-items: center;
 
                 .header__block__point {
-                    background-color: rgba(0, 0, 0, 0.2);
+                    background-color: rgba(255, 255, 255, 0.2);
                     border-radius: 50%;
                     display: block;
                     height: 7px;
@@ -33,7 +35,7 @@
                     position: relative;
 
                     &:before {
-                        background-color: rgba(0, 0, 0, 0.2);
+                        background-color: rgba(255, 255, 255, 0.2);
                         border-radius: 50%;
                         display: block;
                         height: 7px;
@@ -45,7 +47,7 @@
                     }
 
                     &:after {
-                        background-color: rgba(0, 0, 0, 0.2);
+                        background-color: rgba(255, 255, 255, 0.2);
                         border-radius: 50%;
                         display: block;
                         height: 7px;
@@ -59,41 +61,32 @@
             }
         }
 
-        .gadjet__wrapper {
+        .swiper-wrapper {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
 
-            .gadjet__item {
-                display: block;
-                width: 95px;
-                color: #000;
+            .swiper__item {
+                display: flex;
+                width: 208px;
+                flex-direction: column;
                 text-decoration: none;
+                color: #fff;
 
-                &:hover {
-                    transition: all 0.25s ease;
-                    color: #e83587;
+                .item__img {
+                    border-radius: 5px;
+                    height: 120px;
+                    margin-bottom: 11px;
+                    object-fit: cover;
+                    width: 100%;
                 }
 
-                .gadjet__img__wrapper {
-                    mix-blend-mode: multiply;
-                    height: 98px;
-                    max-width: 100%;
-
-                    .gadjet__img {
-                        height: auto;
-                        max-width: 100%;
-                        vertical-align: middle;
-                    margin-bottom: 15px;
-
-                    }
-
+                .carousel__services__name {
+                    font-size: 16px;
+                    line-height: 20px;
                 }
 
-                .gadjet__name {
-                    display: block;
-                    font-size: 14px;
-                    text-align: center;
+                .carousel__descr {
+                    font-size: 13px;
+                    line-height: 20px;
                 }
             }
         }

@@ -15,7 +15,7 @@ const GadjetBlock = () => {
                 <div className="gadjet__wrapper">
                     {gadjet.map((item, i) => (
                         <NavLink to='#' className='gadjet__item' key={i}>
-                            <span className="gadjet__img"><img src={item.img} alt="img" /></span>
+                            <span className="gadjet__img__wrapper"><img className='gadjet__img' src={item.img} alt="img" /></span>
                             <span className="gadjet__name">{item.name}</span>
                         </NavLink>
                     ))}
