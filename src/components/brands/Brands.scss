@@ -1,34 +1,36 @@
 @import "../../mixins.scss";
 
-.brands{
+.brands {
     padding-bottom: 100px;
-        padding-top: 0;
-        border-bottom: 1px solid #eaeaea;
-    .container{
-        @include container;
-        .brands__inner{
+    padding-top: 0;
+    border-bottom: 1px solid #eaeaea;
 
-            .header__block{
+    .container {
+        @include container;
+
+        .brands__inner {
+            .header__block {
                 @include header__block;
-                .h2{
+
+                .h2 {
                     @include h2;
                 }
             }
-            
-            .brands__box{
-                display: flex;
-                .srvices__swiper{ 
+
+            .srvices__swiper {
+                min-width: 0;
+                overflow: hidden;
+
+                .swiper-wrapper {
                     display: flex;
-                    .brands__item{
+
+                    .brands__item {
                         display: block;
                         margin: 0 auto;
-                        .item__img__wrapper{
-                            display: block;
-                            margin: 0 auto;
+
+                        .item__img {
+                            height: 48px;
                             max-width: 115px;
-                            .item__img{
-                                height: 48px;
-                            }
                         }
                     }
                 }

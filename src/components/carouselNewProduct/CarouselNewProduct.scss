@@ -1,0 +1,23 @@
+@import "../../mixins.scss";
+
+.carousel__new__product {
+    overflow: hidden;
+    padding-top: 45px;
+    padding-bottom: 65px;
+    border-top: solid 1px #eaeaea;
+    width: 100%;
+    &::after{
+
+    }
+    .container {
+        @include container;
+
+        .header__block__{
+            @include header__block;
+
+            .h2 {
+                @include h2;
+            }
+        }
+    }
+}

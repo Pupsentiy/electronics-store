@@ -1,0 +1,90 @@
+@import "../../mixins.scss";
+
+.new__product {
+    overflow: hidden;
+
+    .container {
+        @include container;
+
+        .new__product__inner {
+            padding-top: 40px;
+
+            .re-store__reseller {
+                .re-store__reseller__tittle {
+                    color: #000;
+                    font-size: 84px;
+                    line-height: 74px;
+                    padding: 147px 0;
+                    position: relative;
+
+                    &:before {
+                        background-color: #f8eaea;
+                        border-radius: 50%;
+                        content: '';
+                        display: block;
+                        height: 590px;
+                        left: -105px;
+                        position: absolute;
+                        top: 0;
+                        width: 590px;
+                        z-index: -1;
+                    }
+
+                    &:after {
+                        background-color: rgba(0, 0, 0, 0.1);
+                        bottom: 156px;
+                        content: '';
+                        display: block;
+                        height: 1px;
+                        left: -255px;
+                        position: absolute;
+                        width: calc(100% + 510px);
+                        z-index: -2;
+                    }
+                }
+
+                .re-store-reseller__advantages {
+                    margin-top: -147px;
+
+                    .avantage {
+                        padding-top: 64px;
+
+                        .flex__row {
+                            margin-left: -15px;
+                            margin-right: -15px;
+
+                            .flex__item {
+                                width: 20%;
+
+                                .icon__feature {
+                                    
+                                }
+
+                                .advantages__item__title {
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    transition: color 0.25s ease;
+                                    margin: 16px 0 12px;
+                                }
+
+                                .advantages__item__text {
+                                    margin-top: 10px;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        @include container;
+        .seo__text {
+            .seo__text__title {}
+        }
+    }
+}

@@ -10,7 +10,8 @@ import IdeaAndCompilation from '../ideaAndCompilation/IdeaAndCompilation'
 import ServicesSection from '../servicesSection/ServicesSection'
 import CarouselDiscounts from '../carouselDiscounts/CarouselDiscounts'
 import Brands from '../brands/Brands'
-
+import CarouselNewProduct from '../carouselNewProduct/CarouselNewProduct'
+import NewProduct from '../newProduct/NewProduct'
 const Container = () => {
   return (
     <>
@@ -25,6 +26,8 @@ const Container = () => {
     <ServicesSection/>
     <CarouselDiscounts/>
     <Brands/>
+    <CarouselNewProduct/>
+    <NewProduct/>
     </>
   )
 }

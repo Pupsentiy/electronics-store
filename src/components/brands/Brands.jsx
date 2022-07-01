@@ -11,26 +11,22 @@ const Brands = () => {
                     <div className="header__block">
                         <h2 className="h2">Бренды</h2>
                     </div>
-                    <div className="brands__box">
-                        <Swiper
-                            className='srvices__swiper swiper-container'
-                            slidesPerView={1}
-                            spaceBetween={30}
-                            // slidesPerGroup={1}
-                            initialSlide={0}
-                            width={148}
-                        >
-                            {brands.map((brand, i) => (
-                                <SwiperSlide key={i}  >
-                                    <NavLink index={i} className='brands__item' to='#' >
-                                        <div className='item__img__wrapper'>
-                                            <img className='item__img' src={brand.img} alt="swiperimg" />
-                                        </div>
-                                    </NavLink>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </div>
+                    <Swiper
+                        className='srvices__swiper swiper-container'
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        slidesPerGroup={1}
+                        initialSlide={0}
+                        width={148}
+                    >
+                        {brands.map((brand, i) => (
+                            <SwiperSlide key={i}  >
+                                <NavLink index={i} className='brands__item' to='#' >
+                                    <img className='item__img' src={brand.img} alt="swiperimg" />
+                                </NavLink>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </div>
         </div>
