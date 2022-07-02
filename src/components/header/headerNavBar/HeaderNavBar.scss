@@ -10,11 +10,7 @@
         .header__content{
             @include header__content;
             .header__logo {
-                display: flex;
-                margin-right: 60px;
-                align-items: center;
-                text-decoration: none;
-                color: #e83587;
+               @include logo__wraper;
     
                 h4 {
                     margin: 0px;
@@ -29,13 +25,10 @@
                 }
     
                 .logo__box {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-left: 15px;
+                    @include logo__box;
     
-                    .logo {
-                        color: #fff;
+                    .logo  {
+                        color: #fff!important;
                     }
     
                     .text__logo {

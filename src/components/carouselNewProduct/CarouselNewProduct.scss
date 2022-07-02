@@ -7,10 +7,16 @@
     border-top: solid 1px #eaeaea;
     width: 100%;
     &::after{
-
+        border-bottom   : solid 1px #eaeaea;
+        bottom: 94px;
+        content: '';
+        display: block;
+        width: 100%;
     }
+   
     .container {
         @include container;
+       
 
         .header__block__{
             @include header__block;

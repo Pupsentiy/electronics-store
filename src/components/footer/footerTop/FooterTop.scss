@@ -1,0 +1,44 @@
+@import "../../../mixins.scss";
+
+.footer__top {
+    padding: 33px 0 37px;
+    background-color: #f7f7f7;
+    position: relative;
+
+    .container {
+        @include container;
+
+        .footer__logo {
+            @include logo__wraper;
+
+            margin-right: 0px;
+
+            h4 {
+                margin: 0px;
+                padding-right: 15px;
+                font-size: 38px;
+
+                span {
+                    color: #000;
+                }
+            }
+
+            .logo__box {
+                @include logo__box;
+
+                border-left: 2px solid #000;
+                margin: 0px;
+                padding-left: 15px;
+
+                .logo {
+                    color: #000;
+                }
+
+                .text__logo {
+                    font-size: 9px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

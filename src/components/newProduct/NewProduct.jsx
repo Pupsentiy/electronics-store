@@ -12,14 +12,14 @@ const NewProduct = () => {
       <div className="container">
         <div className="new__product__inner">
           <div className="re-store__reseller">
-            <div className="re-store-reseller__title">
+            <div className="re-store__reseller__title">
               <span>re:Store —</span>
               крупнейшая сеть
               <span>Apple Premium Reseller</span>
               в России
             </div>
             <div className="re-store-reseller__advantages">
-              <div className="flex advantages">
+              <div className="flex__advantages">
                 <div className="flex__row">
                   <NavLink to="#" className="flex__item">
                     <img className='icon__feature' src={apple} alt="apple" />
@@ -30,19 +30,19 @@ const NewProduct = () => {
                   </NavLink>
                   <NavLink to="#" className="flex__item">
                     <img className='icon__feature' src={arrow} alt="arrow" />
-                    <h3 className='h3 advantages__item__title'> Обмен в течение 30 дней</h3>
+                    <h3 className=' advantages__item__title'> Обмен в течение 30 дней</h3>
                     <p className='advantages__item__text'>Мы осуществляем обмен в любом магазине re:Store
                       в течение 30 дней с момента покупки.</p>
                   </NavLink>
                   <NavLink to="#" className="flex__item">
-                    <img className='icon__feature'src={repair} alt="repair" />
-                    <h3 className='h3 advantages__item__title'> Авторизованные <br /> сервисные центры Apple</h3>
+                    <img className='icon__feature' src={repair} alt="repair" />
+                    <h3 className=' advantages__item__title'> Авторизованные <br /> сервисные центры Apple</h3>
                     <p className='advantages__item__text'>Все специалисты прошли сертификацию Apple и готовы решить
                       проблему любой сложности.</p>
                   </NavLink>
                   <NavLink to="#" className="flex__item">
-                    <img  className='icon__feature'src={like} alt="like" />
-                    <h3 className='h3 advantages__item__title'>Услуги</h3>
+                    <img className='icon__feature' src={like} alt="like" />
+                    <h3 className=' advantages__item__title'>Услуги</h3>
                     <p className='advantages__item__text'>
                       Рассрочка, сервисные программы, срочная доставка, подписка на iPhone и
                       многие другие услуги для клиентов re:Store
@@ -57,11 +57,20 @@ const NewProduct = () => {
       <div className="container">
         <div className="seo__text">
           <h3 className="seo__text__title">Техника Apple и аксессуары</h3>
-          <p>re:Store (реСтор) — официальный партнер компании Apple в России и Европе, имеющий статус премиум-реселлера Apple Premium Reseller.</p>
-          <p>re:Store — это не просто магазин, но и центр обслуживания, место, куда вы можете прийти, чтобы посоветоваться, выбрать подходящее устройство, где вас научат пользоваться им, дадут советы по эксплуатации и покажут возможности того, что вы приобрели.</p>
-          <p>Мы продаем только официальные версии с легальной русской прошивкой, что избавляет клиентов от множества проблем</p>
-          <p>Наши продавцы — это специалисты в своей области. А качественная, удобная, простая в использовании техника от Apple доставляет удовольствие своим пользователям и редко требует какой-либо технической поддержки.</p>
-          <p>Мы продаем компьютеры, клавиатуры, мышки, мониторы, плееры, телефоны и многое другое. Мы работаем, чтобы вам было удобно. Центры продаж техники Apple расположены по всей России. Вы можете прийти, чтобы лично ознакомиться с тем или иным устройством. У нас предусмотрена и возможность заказа через интернет. Как покупать — выбор за вами!</p>
+          <div className="seo-text__column">
+            <p>re:Store (реСтор) — официальный партнер компании Apple в России и
+              Европе, имеющий статус премиум-реселлера Apple Premium Reseller.</p>
+            <p>Наши продавцы — это специалисты в своей области. А качественная, удобная, простая в использовании техника от
+              Apple доставляет удовольствие своим пользователям и редко требует какой-либо технической поддержки.</p>
+            <p>re:Store — это не просто магазин, но и центр обслуживания, место, куда вы можете прийти, чтобы посоветоваться,
+              выбрать подходящее устройство, где вас научат пользоваться им, дадут советы по эксплуатации и покажут
+              возможности того, что вы приобрели.</p>
+            <p>Мы продаем компьютеры, клавиатуры, мышки, мониторы, плееры, телефоны и многое другое. Мы работаем,
+              чтобы вам было удобно. Центры продаж техники Apple расположены по всей России. Вы можете прийти, чтобы
+              лично ознакомиться с тем или иным устройством. У нас предусмотрена и возможность заказа через интернет.
+              Как покупать — выбор за вами!</p>
+            <p>Мы продаем только официальные версии с легальной русской прошивкой, что избавляет клиентов от множества проблем</p>
+          </div>
         </div>
       </div>
     </div>

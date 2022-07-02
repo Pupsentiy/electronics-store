@@ -1,0 +1,163 @@
+@import "../../../mixins.scss";
+
+.footer__bottom {
+    border-top: 1px solid #eaeaea;
+    padding: 60px 0 56px;
+    background-color: #f7f7f7;
+
+    .container {
+        @include container;
+
+        .footer__row__copyright {
+            color: #999;
+            margin-top: 50px;
+            align-items: baseline;
+            line-height: 25px;
+            font-size: 14px;
+
+            .footer__row {
+                display: flex;
+                flex-direction: column;
+
+                .p__small {
+                    color: #999;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+
+                .footer__col {
+                    max-width: none;
+                    width: auto;
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        .footer__row {
+            display: flex;
+            justify-content: space-between;
+
+            .footer__col {
+                max-width: 253px;
+                width: 100%;
+
+                .footer__socials {
+                    display: flex;
+
+                    .footer__socials__item {
+                        filter: grayscale(1);
+                        line-height: 0;
+                        opacity: 0.3;
+                        margin-right: 10px;
+
+                        .social__img{
+                            width: 35px;
+                        }
+
+                        &:hover {
+                            filter: grayscale(0);
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .footer__mailing {
+                    margin-bottom: 5px;
+                    margin-top: 25px;
+                    .p__small{
+                        margin-top: 15px;
+                    }
+
+                    .sub__news {
+                        background-color: #fff;
+                        border: 1px solid #eaeaea;
+                        border-radius: 3px;
+                        outline: none;
+                        padding: 7px 30px 7px 12px;
+                    }
+                }
+
+                .footer__links__list--columns-2 {
+                    list-style-type: none;
+                    padding: 0px;
+                    flex-flow: wrap column;
+                    max-height: 130px;
+                    display: flex;
+
+                    li {
+                        margin-bottom: 12px;
+                    }
+
+                    .ui__link {
+                        color: #999;
+                        font-size: 14px;
+
+                        &:hover {
+                            transition: all 0.25s ease;
+                            color: #e83587;
+                            text-decoration: none;
+                        }
+                    }
+
+                    
+                }
+
+                .footer__contacts {
+                    margin-top: 22px;
+                    color: #999;
+
+                    .footer__contact__tel {
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #666;
+
+                        &:hover {
+                            transition: all 0.25s ease;
+                            color: #e83587;
+                            text-decoration: none;
+                        }
+                    }
+
+                    .footer__contacts__time {
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin: 0;
+                    }
+                }
+
+                .p__medium {
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .footer__links__list {
+                    list-style-type: none;
+                    padding: 0px;
+
+                    li {
+                        margin-bottom: 12px;
+                    }
+
+                    .ui__link {
+                        color: #999;
+                        font-size: 14px;
+
+                        &:hover {
+                            transition: all 0.25s ease;
+                            color: #e83587;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .p__small {
+                    color: #999;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}

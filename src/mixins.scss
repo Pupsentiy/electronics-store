@@ -4,17 +4,32 @@
     padding: 0px 20px;
 }
 
-@mixin header__content{
+@mixin header__content {
     display: flex;
 }
 
-@mixin header__block{
+@mixin header__block {
     display: flex;
     justify-content: space-between;
     margin-bottom: 45px;
 }
 
-@mixin h2{
+@mixin h2 {
     font-size: 28px;
     margin: 0px;
+}
+
+@mixin logo__wraper {
+    display: flex;
+    margin-right: 60px;
+    align-items: center;
+    text-decoration: none;
+    color: #e83587;
+}
+
+@mixin logo__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
 }

@@ -10,12 +10,18 @@
             padding-top: 40px;
 
             .re-store__reseller {
-                .re-store__reseller__tittle {
+                .re-store__reseller__title {
                     color: #000;
                     font-size: 84px;
                     line-height: 74px;
                     padding: 147px 0;
                     position: relative;
+                    font-weight: 600;
+
+                    span {
+                        color: #e83587;
+                        display: block;
+                    }
 
                     &:before {
                         background-color: #f8eaea;
@@ -46,18 +52,41 @@
                 .re-store-reseller__advantages {
                     margin-top: -147px;
 
-                    .avantage {
+                    .flex__advantages {
                         padding-top: 64px;
 
                         .flex__row {
+                            display: flex;
+                            flex-direction: row;
                             margin-left: -15px;
                             margin-right: -15px;
 
                             .flex__item {
-                                width: 20%;
+                                padding: 0 15px;
+
+                                &:hover > .advantages__item__title {
+                                    color: #e83587;
+                                    transition: color 0.25s ease;
+                                }
+
+                                text-decoration: none;
+
+                                @media (min-width: 1440px) {
+                                    width: 20%;
+                                }
+
+                                @media (min-width: 768px) {
+                                    max-width: 286px;
+                                    width: 25%;
+                                }
+
+                                @media (min-width: 1100px) {
+                                    margin-bottom: 80px;
+                                }
 
                                 .icon__feature {
-                                    
+                                    width: 40px;
+                                    height: 40px;
                                 }
 
                                 .advantages__item__title {
@@ -65,13 +94,16 @@
                                     line-height: 20px;
                                     transition: color 0.25s ease;
                                     margin: 16px 0 12px;
+                                    color: #000;
+                                    cursor: pointer;
                                 }
 
                                 .advantages__item__text {
+                                    color: #000;
                                     margin-top: 10px;
                                     font-size: 14px;
                                     line-height: 20px;
-                                    margin: 0;
+                                    cursor: pointer;
                                 }
                             }
                         }
@@ -83,8 +115,37 @@
 
     .container {
         @include container;
+
         .seo__text {
-            .seo__text__title {}
+            padding-top: 73px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 66px;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .seo__text__title {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 10px;
+            }
+
+            .seo-text__column {
+                position: relative;
+                color: #999;
+                max-height: 176px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-bottom: -10px;
+
+                p {
+                    font-size: 12px;
+                    line-height: 15px;
+                    width: 50%;
+                    margin-top: 10px;
+                }
+            }
         }
     }
 }
